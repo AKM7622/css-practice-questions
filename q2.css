@@ -1,0 +1,89 @@
+/* Question 1 */
+.q1 span {
+  width: 200px; /* Doesn't work on inline elements */
+  background-color: lightblue;
+} /* span is inline by default */
+
+/* Question 2 */
+.q2 div {
+  width: 200px;
+  height: 50px;
+} /* div is block by default */
+.q2 .d1 {
+  background-color: red;
+}
+.q2 .d2 {
+  background-color: blue;
+}
+
+/* Question 3 */
+.q3 .box {
+  border: 1px solid black;
+  width: 150px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Question 4 */
+.q4 p {
+  display: none; /* Not visible, doesn't occupy space */
+  visibility: hidden; /* Not visible but still occupies space */
+}
+
+/* Question 5 */
+.q5 div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: rgba(255, 0, 0, 0.5); /* a sets background color opacity */
+}
+
+/* Question 6 */
+.q6 div {
+  opacity: 0.5; /* Sets opacity of the entire element */
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+.q6 .red {
+  background-color: red;
+}
+.q6 .blue {
+  background-color: blue;
+}
+.q6 .green {
+  background-color: green;
+}
+
+/* Question 7 */
+.q7 .parent {
+  width: 400px;
+}
+.q7 .parent .child {
+  width: 50%; /* Sets width to 50% of parent (200px) */
+  border: 1px solid black;
+}
+
+/* Question 8 */
+.q8 div {
+  font-size: 20px;
+  padding: 2em; /* Sets padding to 2 times the font-size of current element (40px) */
+  border: 1px solid black;
+}
+
+/* Question 9 */
+html {
+  font-size: 16px;
+}
+.q9 p {
+  font-size: 2rem; /*Sets font-size to 2 times the font-size of root (html) element (32px)*/
+}
+
+/* Question 10 */
+.q10 div {
+  height: 300px;
+  background-image: url('https://images.pexels.com/photos/35786541/pexels-photo-35786541.jpeg');
+  background-size: cover; /* Crops and zooms the image so it fits covers the entire element */
+  background-position: center;
+}
